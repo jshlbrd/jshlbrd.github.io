@@ -76,7 +76,7 @@ Here's some file size metadata for the compressed VXShare samples and the result
 164MB VirusShare_00220.laika.zip
 ```
 
-The VXShare samples are 9920MB (~9.3GB) and the resulting uncompressed Laika BOSS log file is 598MB-- that's a lot of useful file metadata at 6% of the original sample size! Compressing the log reduces its size a considerable amount, 164MB or 1.6% of the original sample size.
+The VXShare samples are 9920MB (~9.3GB) compressed and the resulting uncompressed Laika BOSS log file is 598MB-- that's a lot of useful file metadata at 6% of the original sample size! Compressing the log reduces its size a considerable amount, 164MB or 1.6% of the original sample size.
 
 Here's how many files are in the dataset.
 
