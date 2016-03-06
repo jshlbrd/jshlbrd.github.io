@@ -22,7 +22,7 @@ To best understand this blog post, it's important to know a couple key things ab
 * It only identifies files it knows about
 * Modules only run on relevant files
 
-First, and most importantly, it can only identify files it knows about. As each file object is parsed by the tool, it is checked for file signature metadata; if file signature metadata is found, then a file type is explicitly assigned to the object. The file type is found in the field 'fileType[]' and is primarily attached via Yara signatures; if a Yara signature for a particular file object either doesn't exist or doesn't append the file type to that object, then the object will not have a defined file type. As of now, there are 31 file signatures recognized by the tool. For reference, they are copied below.
+First, and most importantly, it can only identify files it knows about. As each file object is parsed by the tool, it is checked for file signature metadata; if file signature metadata is found, then a file type is explicitly assigned to the object. The file type is found in the field 'fileType[]' and is primarily attached via Yara signatures; if a Yara signature for a particular file object doesn't exist or if the signature doesn't append the file type to an object, then the object will not have a defined file type. As of now, there are 31 file signatures recognized by the tool. For reference, they are copied below.
 
 ```
 file_type = "pem"
