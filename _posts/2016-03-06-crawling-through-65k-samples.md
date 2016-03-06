@@ -66,36 +66,36 @@ If you're still with me, then let's look at some of the data! Before we begin, m
 This dataset contains files from VXShare torrent 220, which contains 65,536 unorganized files. To begin, I was first interested in how many of these files Laika BOSS recognized. To identify this, two fields need to be checked-- depth and fileType[]. Depth represents which layer each file object exists in, and increments as file objects are exploded. Any file object with a depth of zero should be the highest level file object, meaning that's the originating VXShare sample (aka, a root file). The fileType[] field is more self-explanatory, it represents the type of file that each file object is. Finding an empty fileType[] field means that Laika BOSS doesn't have a file signature for that particular file type.
 
 ```
-empty		0.85948
-pe			0.11400
-rar			0.00723
-zip			0.00616
-jar			0.00218
-cab			0.00024
-ole			0.00012
-swf			0.00011
-cws			0.00009
-mime		0.00002
-officex	0.00002
-pdf			0.00002
-zws			0.00002
+0.85948 empty
+0.11400 pe
+0.00723 rar
+0.00616 zip
+0.00218 jar
+0.00024 cab
+0.00012 ole
+0.00011 swf
+0.00009 cws
+0.00002 mime
+0.00002 officex
+0.00002 pdf
+0.00002 zws
 ```
 
 The ratio of unidentified files to identified files is extremely high, so much that it makes the distribution of file types difficult to judge. Kind of makes you wonder, what kinds of samples are people uploading?! Here's the same dataset with the empty fileType[] stripped out.
 
 ```
-pe 			0.81127
-rar 		0.05147
-zip 		0.04387
-jar 		0.01553
-cab 		0.00174
-ole 		0.00087
-swf 		0.00076
-cws 		0.00065
-mime 		0.00011
-officex 0.00011
-pdf 		0.00011
-zws 		0.00011
+0.81127 pe
+0.05147 rar
+0.04387 zip
+0.01553 jar
+0.00174 cab
+0.00087 ole
+0.00076 swf
+0.00065 cws
+0.00011 mime
+0.00011 officex
+0.00011 pdf
+0.00011 zws
 ```
 
 With the empty files removed, the distribution is easier to understand. Not surprisingly, PE files make up the majority of identifiable files in the torrent, and compressed files follow. Personally, I was disappointed to see a poor representation of files usually encountered in spearphishing attacks-- namely, the ole, officex, and pdf file types.
@@ -103,48 +103,48 @@ With the empty files removed, the distribution is easier to understand. Not surp
 Since we ignored any exploded file objects before, let's take a look at them now. Consider that because there are an unknown number of child file objects, we cannot compare them to the total number of root files scanned. This distribution also does not account for recursive file explosions or child object explosions-- e.g., a ZIP file may contain multiple files within it, and some of those files may contain files within themselves. That said, here are all file objects that were exploded from another file object, along with the source module that exploded them.
 
 ```
-der, EXPLODE_PKCS7		5448	[1]
-crt, EXPLODE_PKCS7		5448	[1]
-pkcs7, META_PE				5242	[1]
-class, EXPLODE_ZIP		4236	[3]
-pe, EXPLODE_RAR				1032
-zip, EXPLODE_ZIP			303		[2]
-pkcs7, EXPLODE_ZIP		209
-pe, EXPLODE_ZIP				195
-hlp, META_PE					49
-ole, EXPLODE_RAR			34
-rar, EXPLODE_RAR			24
-ole, EXPLODE_ZIP			15
-jar, EXPLODE_ZIP			12		[3]
-swf, EXPLODE_SWF			11
-lnk, EXPLODE_RAR			11
-fws, EXPLODE_SWF			11
-zip, EXPLODE_RAR			10
-swf, EXPLODE_RAR			9
-cab, EXPLODE_RAR			9
-crt, EXPLODE_ZIP			8
-swf, EXPLODE_ZIP			7
-fws, EXPLODE_RAR			7
-cws, EXPLODE_ZIP			7
-der, EXPLODE_ZIP			5
-chm, EXPLODE_RAR			5
-mov, EXPLODE_ZIP			4
-pem, EXPLODE_ZIP			3
-tar, EXPLODE_ZIP			2
-pdf, EXPLODE_ZIP			2
-pdf, EXPLODE_RAR			2
-officex, EXPLODE_ZIP	2
-cws, EXPLODE_RAR			2
-wmv, EXPLODE_ZIP			1
-wmv, EXPLODE_RAR			1
-rtf, EXPLODE_ZIP			1		[3]
-rtf, EXPLODE_RAR			1		[3]
-officex, EXPLODE_RTF	1		[3]
-officex, EXPLODE_RAR	1
-mp3, EXPLODE_ZIP			1
-mov, META_PE					1
-cab, EXPLODE_ZIP			1
-cab, EXPLODE_OLE			1
+5448 der, EXPLODE_PKCS7 [1]
+5448 crt, EXPLODE_PKCS7 [1]
+5242 pkcs7, META_PE [1]
+4236 class, EXPLODE_ZIP [3]
+1032 pe, EXPLODE_RAR
+303 zip, EXPLODE_ZIP [2]
+209 pkcs7, EXPLODE_ZIP
+195 pe, EXPLODE_ZIP
+49 hlp, META_PE
+34 ole, EXPLODE_RAR
+24 rar, EXPLODE_RAR
+15 ole, EXPLODE_ZIP
+12 jar, EXPLODE_ZIP [3]
+11 swf, EXPLODE_SWF
+11 lnk, EXPLODE_RAR
+11 fws, EXPLODE_SWF
+10 zip, EXPLODE_RAR
+9 swf, EXPLODE_RAR
+9 cab, EXPLODE_RAR
+8 crt, EXPLODE_ZIP
+7 swf, EXPLODE_ZIP
+7 fws, EXPLODE_RAR
+7 cws, EXPLODE_ZIP
+5 der, EXPLODE_ZIP
+5 chm, EXPLODE_RAR
+4 mov, EXPLODE_ZIP
+3 pem, EXPLODE_ZIP
+2 tar, EXPLODE_ZIP
+2 pdf, EXPLODE_ZIP
+2 pdf, EXPLODE_RAR
+2 officex, EXPLODE_ZIP
+2 cws, EXPLODE_RAR
+1 wmv, EXPLODE_ZIP
+1 wmv, EXPLODE_RAR
+1 rtf, EXPLODE_ZIP [3]
+1 rtf, EXPLODE_RAR [3]
+1 officex, EXPLODE_RTF [3]
+1 officex, EXPLODE_RAR
+1 mp3, EXPLODE_ZIP
+1 mov, META_PE
+1 cab, EXPLODE_ZIP
+1 cab, EXPLODE_OLE
 ```
 
 Now, these are some interesting results! There are many ways to interpret this data, but here's my immediate reaction:
@@ -178,19 +178,19 @@ I should wrap this post up by exploring some of these file types. Since there ar
 1 007daffc89d9f0e602bbd98cac070cf4
 1 0052d6c6cb42e6e310bbd010022ca7b4
 1 00043da75f4cf67f17ef9a8d7e0d5bac
- ```
+```
 
 A lot! There were 2,445 imphashes, far too many to include on this page. ~86% of them were unique and were only seen once. The results above show that, at the high end, one imphash appeared over 1000 times. A cursory look on Virus Total suggests that this imphash may be related to adware / spyware.
 
 Finally, let's see what's in those OLE files. Specifically, I want to see if there is any macro code in them that calls out to malicious IP addresses / domains or drops files to disk. We can use the IOC field in the META_OLEVBA module to identify those.
 
 ```
-Urlmon.dll 																			1
-cureall.exe 																		1
-shell32.dll 																		1
-amnestic.exe 																		1
-hxxp://geobrugg[.]co[.]kr/bbs/factuur2390.exe 	1
-factuur2390.exe 																1
+1 Urlmon.dll
+1 cureall.exe
+1 shell32.dll
+1 amnestic.exe
+1 hxxp://geobrugg[.]co[.]kr/bbs/factuur2390.exe
+1 factuur2390.exe
 ```
 
 There weren't many OLE files in the dataset, so the lack of results isn't very surprising. With that said, this can be useful data to pivot from if we're interested in exploring these files further.
