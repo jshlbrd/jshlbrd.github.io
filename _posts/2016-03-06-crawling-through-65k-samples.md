@@ -7,9 +7,9 @@ categories:
 
 Recently I mentioned on Twitter that I was interested in taking the VXShare torrent malware samples, running them through Lockheed Martin's Laika BOSS, and sharing the results. That project is still a work in progress, but I thought I would share some analysis of one of the VXShare torrent datasets.
 
-If you aren't familiar with Laika BOSS, you can access the repo here: https://github.com/lmco/laikaboss
+If you aren't familiar with Laika BOSS, you can access the repo here: [https://github.com/lmco/laikaboss](https://github.com/lmco/laikaboss)
 
-Note that I'm using my fork of the Laika BOSS repository, which includes many modules that are not implemented in the source repository. Most of these modules can be accessed here: https://github.com/jshlbrd/laikaboss-modules
+Note that I'm using my fork of the Laika BOSS repository, which includes many modules that are not implemented in the source repository. Most of these modules can be accessed here: [https://github.com/jshlbrd/laikaboss-modules](https://github.com/jshlbrd/laikaboss-modules)
 
 ## TLDR: WTF is Laika BOSS?
 
