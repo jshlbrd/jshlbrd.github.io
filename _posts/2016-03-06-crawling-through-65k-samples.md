@@ -64,7 +64,7 @@ If you're still with me, then let's look at some of the data!
 
 ## Running through the data
 
-This dataset contains files from VXShare torrent 220, which contains 65,536 unorganized files. One file was not parsed correctly, so the Laika BOSS log data contains metadata for 65,535 files. Additionally, this analysis relied on converting the log data to a JSON object in a Python script. There were 841 samples that couldn't be parsed, so they were excluded from analysis.
+This dataset contains files from VXShare torrent 220, which contains 65,536 of unorganized files. One file was not parsed correctly, so the Laika BOSS log data contains metadata for 65,535 files. Additionally, this analysis relied on converting the log data to a JSON object in a Python script. There were 841 samples that couldn't be parsed, so they were excluded from analysis.
 
 With all that, the resulting dataset includes 64,694 files.
 
