@@ -66,19 +66,19 @@ If you're still with me, then let's look at some of the data! Before we begin, m
 This dataset contains files from VXShare torrent 220, which contains 65,536 unorganized files. To begin, I was first interested in how many of these files Laika BOSS recognized. To identify this, two fields need to be checked-- depth and fileType[]. Depth represents which layer each file object exists in, and increments as file objects are exploded. Any file object with a depth of zero should be the highest level file object, meaning that's the originating VXShare sample (aka, a root file). The fileType[] field is more self-explanatory, it represents the type of file that each file object is. Finding an empty fileType[] field means that Laika BOSS doesn't have a file signature for that particular file type.
 
 ```
-empty 	0.85948
-pe 			0.11400
-rar 		0.00723
-zip 		0.00616
-jar 		0.00218
-cab 		0.00024
-ole 		0.00012
-swf 		0.00011
-cws 		0.00009
-mime 		0.00002
-officex 0.00002
-pdf 		0.00002
-zws 		0.00002
+empty		0.85948
+pe			0.11400
+rar			0.00723
+zip			0.00616
+jar			0.00218
+cab			0.00024
+ole			0.00012
+swf			0.00011
+cws			0.00009
+mime		0.00002
+officex	0.00002
+pdf			0.00002
+zws			0.00002
 ```
 
 The ratio of unidentified files to identified files is extremely high, so much that it makes the distribution of file types difficult to judge. Kind of makes you wonder, what kinds of samples are people uploading?! Here's the same dataset with the empty fileType[] stripped out.
