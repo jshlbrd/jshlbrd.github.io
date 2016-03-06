@@ -85,7 +85,7 @@ Here's how many files are in the dataset.
 197642 total file objects
 ```
 
-In the context of this blog post, a 'root' file object is one that was not exploded from another file object. The dataset began with 64,694 files; however, the total file object count is 197,642. How did this happen? Laika BOSS processed the root file objects and identified child objects within them, which were then dispatched through the system. The total file object count includes the ~65k root file objects, and all exploded file objects that originates from those root files.
+In the context of this blog post, a 'root' file object is one that was not exploded from another file object. The dataset began with 64,694 files; however, the total file object count is 197,642. How did this happen? Laika BOSS processed the root file objects and identified child objects within them, which were then dispatched through the system. The total file object count includes the ~65k root file objects, and all exploded file objects that originate from those root files.
 
 Let's look at how many root file objects Laika BOSS successfully identified. To do this, we're looking for every file object that has a depth of zero (meaning the object has not been exploded and therefore is a root object).
 
@@ -124,7 +124,7 @@ The ratio of unidentified file objects to identified file objects is extremely h
 0.00011 zws
 ```
 
-With the empty file objects removed, the distribution is easier to understand. Not surprisingly, PE files make up the majority of identifiable file objects in the dataset. Personally, I was disappointed to see a low representation of files usually encountered in phishing emails-- ole, officex, and pdf file types.
+With the empty file objects removed, the distribution is easier to understand. Not surprisingly, PE files make up the majority of identifiable file objects in the dataset. Personally, I was disappointed to see a low representation of files usually encountered in phishing emails-- ole, officex, and pdf files.
 
 Here's a similar breakdown for all file objects, root and children.
 
