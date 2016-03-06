@@ -64,7 +64,7 @@ If you're still with me, then let's look at some of the data!
 
 ## Running through the data
 
-This dataset contains files from VXShare torrent 220, which contains 65,536 unorganized files. One file was not parsed correctly, so the Laika BOSS log data contains metadata for 65,535 files. Additionally, the analysis relied on converting the log data to a JSON object in a Python script. There were 841 samples that couldn't be parsed, so they were excluded from analysis.
+This dataset contains files from VXShare torrent 220, which contains 65,536 unorganized files. One file was not parsed correctly, so the Laika BOSS log data contains metadata for 65,535 files. Additionally, this analysis relied on converting the log data to a JSON object in a Python script. There were 841 samples that couldn't be parsed, so they were excluded from analysis.
 
 With all that, the resulting dataset includes 64,694 files.
 
@@ -76,7 +76,7 @@ Here's some file size metadata for the compressed VXShare samples and the result
 164MB VirusShare_00220.laika.zip
 ```
 
-The VXShare samples are 9920MB (~9.3GB) and the resulting uncompressed Laika BOSS log file is 598MB-- that's lots of useful file metadata at 6% of the original sample size! Compressing the log reduces its size a considerable amount, 164MB or 1.6% of the original sample size.
+The VXShare samples are 9920MB (~9.3GB) and the resulting uncompressed Laika BOSS log file is 598MB-- that's a lot of useful file metadata at 6% of the original sample size! Compressing the log reduces its size a considerable amount, 164MB or 1.6% of the original sample size.
 
 Here's how many files are in the dataset.
 
@@ -293,7 +293,7 @@ Since there are a lot of PE files, we'll look at those first. I wonder how many 
 1 00043da75f4cf67f17ef9a8d7e0d5bac
 ```
 
-A lot! There were 2,445 imphashes, far too many to include on this page. ~86% of them were unique and were only seen once. The results above show that, at the high end, one imphash appeared over 1000 times. A cursory look on Virus Total suggests that the imphash may be related to adware / spyware.
+A lot! There were 2,445 imphashes, far too many to include on this page. ~86% of them were unique and were only seen once. The results above show that, at the high end, one imphash appeared over 1,000 times. A cursory look on Virus Total suggests that the imphash may be related to adware / spyware.
 
 What about the distribution of language codes in the PE files?
 
@@ -356,9 +356,9 @@ The compile time on a PE file can sometimes be a useful artifact, I wonder what 
 1 1969:12:31 16:00:16-08:00
 ```
 
-Yep, nothing suspicious there. :)
+Yep, nothing suspicious. :)
 
-Let's finish with OLE files. What's the distribution of word count in these file objects?
+Let's finish with OLE files. What's the distribution of word count in these files?
 
 ```
 2 96
