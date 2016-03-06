@@ -18,6 +18,7 @@ Laika BOSS is a file-scanning tool built on Python and Yara that produces extens
 ## Understanding the data
 
 To best understand this blog post, it's important to know a couple key things about Laika BOSS
+
 * It only identifies files it knows about
 * Modules only run on relevant files
 
