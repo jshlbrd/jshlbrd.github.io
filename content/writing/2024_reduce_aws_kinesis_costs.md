@@ -1,5 +1,6 @@
 ---
 title: Reduce AWS Kinesis Costs by 80% with this One Weird Trick
+author: 'Josh Liburdi'
 date: 2024-06-15
 description: "Learn how to burn less cash in AWS with record aggregation in Kinesis Data Streams."
 tags:

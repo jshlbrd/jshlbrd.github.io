@@ -1,5 +1,8 @@
 ---
 title: "Building"
+author: 'Josh Liburdi'
+date: 2024-06-19
+description: 'All the things I've built.'
 ---
 
 # Security Engineering
@@ -11,7 +14,7 @@ title: "Building"
 
 ## 📂 [Strelka](https://github.com/target/strelka)
 
-**Purpose**: Static file analysis system for enterprise security teams.<br>
+**Purpose**: Static file analysis for enterprise security teams.<br>
 **Role**: Creator and lead developer from early 2017 to late 2019.<br>
 
 ## 🌐 [Zeek](https://github.com/zeek/zeek)

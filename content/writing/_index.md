@@ -1,4 +1,6 @@
 ---
 title: "Writing"
-date: 2019-02-24
+author: 'Josh Liburdi'
+date: 2024-06-19
+description: 'All the things I've written.'
 ---
