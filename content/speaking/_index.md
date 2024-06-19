@@ -9,7 +9,7 @@ date: 2024-06-19
 Event: BSides SF (San Francisco, CA)<br>
 Date: May 4, 2024
 
-## [Tines Security Automation Roadshow](https://www.tines.com/blog/security-automation-roadshow-report)
+## [Customer Panel](https://www.tines.com/blog/security-automation-roadshow-report)
 Event: Tines Security Automation Roadshow (San Francisco, CA)<br>
 Date: February 7, 2024 
 
