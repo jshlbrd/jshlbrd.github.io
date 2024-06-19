@@ -51,17 +51,17 @@ pygmentsUseClasses = true
     url = '/'
     weight = 1
   [[menu.main]]
-    name = "Writing"
-    identifier = "write"
+    name = "Building"
+    identifier = "build"
     weight = 2
-    url = "/writing/"
+    url = "/building/"
   [[menu.main]]
     name = "Speaking"
     identifier = "speak"
     weight = 3
     url = "/speaking/"
   [[menu.main]]
-    name = "Building"
-    identifier = "build"
+    name = "Writing"
+    identifier = "write"
     weight = 4
-    url = "/building/"
+    url = "/writing/"

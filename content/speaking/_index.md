@@ -2,7 +2,6 @@
 title: "Speaking"
 author: 'Josh Liburdi'
 date: 2024-06-19
-description: 'All the places I've spoken at.'
 ---
 
 # 2024
