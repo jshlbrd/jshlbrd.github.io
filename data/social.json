@@ -1,0 +1,14 @@
+{
+  "links": [
+    {
+      "name": "github",
+      "url": "https://github.com/jshlbrd",
+      "image": "images/social/github.svg"
+    },
+    {
+      "name": "linkedin",
+      "url": "https://www.linkedin.com/in/joshliburdi",
+      "image": "images/social/linkedin.svg"
+    }
+  ]
+}
