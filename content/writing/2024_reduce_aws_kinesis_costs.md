@@ -15,7 +15,7 @@ The [AWS Kinesis Data Streams service bills based on two criteria](https://aws.a
 
 That’s because records are billed in increments of 25 KB, which means you pay the same amount if the record is 500 bytes, 5 KB, or 25 KB. Do you see where this is going? If you aggregate many records into a single record, with the goal of getting as close to 25 KB as possible, then you can save up to 80% on all costs (assuming 1,000 bytes per original record and 25 KB per aggregated record).
 
-The table below (taken from [my presentation at 2023's fwd:cloudsec conference](../presentations/2023_fwdcloudsec_billions_served_processing_security_event_logs_with_the_aws_serverless_stack.pdf)) shows the cost comparison across multiple AWS streaming services and how record size can have a big impact on savings:
+The table below (taken from [my presentation at 2023's fwd:cloudsec conference](/docs/speaking/2023_fwdcloudsec_billions_served_processing_security_event_logs_with_the_aws_serverless_stack.pdf)) shows the cost comparison across multiple AWS streaming services and how record size can have a big impact on savings:
 
 ![image](/images/posts/2024_reduce_aws_kinesis_costs_0.webp)
 
