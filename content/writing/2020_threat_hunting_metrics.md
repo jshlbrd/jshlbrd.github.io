@@ -2,7 +2,7 @@
 title: 'Creating & Tracking Threat Hunting Metrics'
 author: 'Josh Liburdi'
 date: 2020-03-28
-description: 'Describes how to maintain focus during threat hunts with planning and structured tasks.'
+description: 'Describes how to measure the success of a threat hunting program with operational metrics and key performance indicators.'
 tags:
    - threat hunting
 ---
