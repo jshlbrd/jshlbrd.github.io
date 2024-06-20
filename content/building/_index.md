@@ -4,7 +4,7 @@ author: 'Josh Liburdi'
 date: 2024-06-19
 ---
 
-# Security Engineering
+# Open-Source Software
 
 ## 💡 [Substation](https://github.com/brexhq/substation)
 
@@ -20,3 +20,9 @@ date: 2024-06-19
 
 **Purpose**: Network security monitoring (~~NSM~~ NDR), analysis, and scripting.<br>
 **Role**: Contributed the [Remote Desktop Protocol (RDP) analyzer](https://github.com/zeek/zeek/tree/master/src/analyzer/protocol/rdp) in early 2015.
+
+# Security Guides
+
+## ✏️ [Detection Engineering Pocket Guide](https://github.com/jshlbrd/detection-engineering-pocket-guide)
+
+## 🔍 [Threat Hunting Pocket Guide](https://github.com/jshlbrd/threat-hunting-pocket-guide)
