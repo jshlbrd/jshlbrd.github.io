@@ -9,7 +9,7 @@ Another citizen of the Internet doing stuff for money and fame.
 
 ## Long Bio
 Josh Liburdi is a security engineer and tech lead who focuses on threat detection, incident response, and distributed systems
-with practical experience in most aspects of "security operations" (including low-level analysis, systems design and development, and program strategy).
+with practical experience in most areas of "security operations" (including low-level analysis, systems design and development, and program strategy).
 
 He has more than a decade of industry experience and has worked at several diverse organizations, including Fortune 50 companies (General Electric, Target), startups (Brex), and security vendors (CrowdStrike, Splunk).
 
