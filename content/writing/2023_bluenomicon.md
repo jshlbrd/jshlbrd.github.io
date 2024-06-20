@@ -7,4 +7,4 @@ tags:
    - analytics
 ---
 
-I contributed the chapter "Building Loosely Coupled Threat Detection Systems" to Splunk SURGe's book, [Bluenomicon: The Network Defender’s Compendium](https://www.splunk.com/en_us/blog/security/bluenomicon-the-network-defender-s-compendium.html). The book is a collection of essays from security professionals on a variety of topics, from threat hunting to incident response to cloud security, and it's free. I also have a few copies if anyone wants one.
+I contributed the chapter "Building Loosely Coupled Threat Detection Systems" to Splunk SURGe's book, [Bluenomicon: The Network Defender’s Compendium](https://www.splunk.com/en_us/form/the-network-defenders-compendium.html). The book is a collection of essays from security professionals on a variety of topics, from threat hunting to incident response to cloud security, and it's "free" (requires contact info). I also have several physical copies if anyone wants one.
