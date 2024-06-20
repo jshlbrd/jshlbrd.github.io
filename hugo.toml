@@ -1,8 +1,8 @@
-baseURL = "https://jshlbrd.github.io/"
+baseURL = "https://joshliburdi.com/"
 languageCode = "en-us"
 theme = "hugo-winston-theme"
 themesDir = "themes"
-title = "jshlbrd.github.io"
+title = "joshliburdi.com"
 paginate = 3
 pygmentsCodeFences = true
 pygmentsCodefencesGuessSyntax = true
