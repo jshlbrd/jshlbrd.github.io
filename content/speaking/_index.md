@@ -4,7 +4,7 @@ author: 'Josh Liburdi'
 date: 2024-06-19
 ---
 
-Sometimes I go places and talk about security. I'm open to speaking engagements (reach me [on LinkedIn](https://www.linkedin.com/in/joshliburdi/)).
+Sometimes I go places and talk about security operations. I'm open to speaking engagements (reach me [on LinkedIn](https://www.linkedin.com/in/joshliburdi/)).
 
 <!-- # 2024 -->
 ## [~~Reinventing~~ Inventing ETL for Detection and Response Teams](/docs/speaking/2024_bsides_sf_reinventing_etl_for_detection_and_response_teams.pdf)
