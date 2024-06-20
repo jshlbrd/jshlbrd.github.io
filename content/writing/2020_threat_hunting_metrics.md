@@ -59,7 +59,7 @@ Similar to OMs, these are continuously updated in real-time and are accessible b
 
 # Making Metrics Accessible
 Earlier I said that everyone could see our metrics, so I thought that I should share a heavily redacted version of our metrics dashboards. The screenshot below shows our "thousand-foot view" of the hunting program; it contains the majority of our OMs and KPIs:
-![image](/images/posts/2020_threat_hunting_metrics_0.jpg)
+![image](/images/writing/2020_threat_hunting_metrics_0.jpg)
 
 We clearly label our OMs and KPIs on the dashboard and use a combination of total counts, bar charts, pie graphs, and line charts to describe the status of our program at any given time. These OMs are dynamically viewable over any time range (day-to-day, week-to-week, month-to-month), making it easy to view long-term trends. As the program lead, I regularly use this dashboard to do the following:
 - Get a sense of how large our backlog is.
@@ -72,7 +72,7 @@ We clearly label our OMs and KPIs on the dashboard and use a combination of tota
   - "Are we skewed toward a particular set of tactics?"
 
 This next screenshot is a bit more complicated, but is valuable for identifying *what* we're finding, *how* we're finding it, and *who* is impacted by our findings:
-![image](/images/posts/2020_threat_hunting_metrics_1.jpg)
+![image](/images/writing/2020_threat_hunting_metrics_1.jpg)
 
 This Sankey diagram is our "flow" of all individual hunt findings (behind the scenes, a detailed spreadsheet powers the diagram). It follows this path, from left to right:
 - Hunt that produced the finding.

@@ -17,7 +17,7 @@ That’s because records are billed in increments of 25 KB, which means you pay 
 
 The table below (taken from [my presentation at 2023's fwd:cloudsec conference](/docs/speaking/2023_fwdcloudsec_billions_served_processing_security_event_logs_with_the_aws_serverless_stack.pdf)) shows the cost comparison across multiple AWS streaming services and how record size can have a big impact on savings:
 
-![image](/images/posts/2024_reduce_aws_kinesis_costs_0.webp)
+![image](/images/writing/2024_reduce_aws_kinesis_costs_0.webp)
 
 # How to Do It
 In short, your application needs to support record aggregation and de-aggregation. Both are built into and native features of [Substation](https://github.com/brexhq/substation), so if you use that, then you immediately get the advantage of this cost savings. If you want to build your own solution, then you could add support for the [Kinesis Producer Library](https://docs.aws.amazon.com/streams/latest/dev/developing-producers-with-kpl.html) or otherwise use any other method of aggregation (JSON array, protobuf, text compression, etc).

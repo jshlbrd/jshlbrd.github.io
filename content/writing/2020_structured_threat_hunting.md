@@ -70,7 +70,7 @@ Here's how this appears in the Jira hierarchy:
 - 14 sub-tasks ("Exploit Framework X Module 1", "Exploit Framework X Module 2", "Exploit Framework X Module 3", etc.)
 
 Here's a redacted screenshot from our Jira portfolio of this in practice:
-![image](/images/posts/2020_structured_threat_hunting_0.webp)
+![image](/images/writing/2020_structured_threat_hunting_0.webp)
 
 An analyst's ability to participate in hunting scales with experience:
 - Junior analysts may complete hunt tasks, but are unlikely to define them.
