@@ -79,7 +79,7 @@ This all sounds nice and simple, but eventually things will go wrong when an une
 - What is the appropriate timeout, if any, for the lock?[^40]
 - How does the system behave under heavy load or backpressure?[^50]
 
-And the most important consideration: *What happens next if message processing fails*? At the point of failure, the message has already been locked and can't be processed again. You might consider:
+And the most important consideration: *What happens next if message processing fails*? At the point of failure, the message is already locked and can't be processed again. You might consider:
 - Skipping the message entirely.
    - Now your exactly once system is an at-most once system, which is probably not what you want.
 - Routing the message to a dead-letter queue.
