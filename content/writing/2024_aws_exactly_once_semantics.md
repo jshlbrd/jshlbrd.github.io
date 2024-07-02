@@ -70,7 +70,7 @@ No, this is *deduplication*. Idempotent operations can be repeated without chang
 
 Probably not. In the context of delivery guarantees, the outcome is the same but the method used to achieve that outcome is different. People may use the terms "idempotency" and "deduplication" interchangeably when discussing distributed message systems, so it's important to clarify the requirements of the system *and its applications*. 
 
-If you want to know more about how this can impact your service or app, then talk to a system architect or tech lead[^20].
+If you want to know more about how this can impact your service or app, then talk to a system architect or tech lead.[^20]
 
 ## When Everything Goes Wrong
 
