@@ -54,7 +54,7 @@ In almost all cases, if you want exactly once semantics then your application ne
 For the AWS services mentioned in this post, the most common way to solve this problem within AWS is to use DynamoDB as a distributed lock with an idempotency key. This works by:
 1. The app consumes or produces a message containing a unique value that is *used to uniquely identify the message* -- this is the idempotency key, and examples can include a UUID or a hash of the message.
 2. The app uses the idempotency key in a `PutItem` operation in DynamoDB -- this is the distributed lock. This operation has a constraint that *the key must not already be in the table* and an attribute that will *delete the key after some time*.
-3. If the `PutItem` operation is a success, then the app processes the message; otherwise, message is skipped.
+3. If the `PutItem` operation is a success, then the app processes the message; otherwise, the message is skipped.
 
 As a block diagram, the process looks like this in a consumer app:
 
